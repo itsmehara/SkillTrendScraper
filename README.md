@@ -64,7 +64,8 @@ SkillTrendScraper is a Python web scraper designed to extract top job keywords a
 
     Modify the conf.yaml file in the root directory to customize logging and project settings.
 
-4. **Usage**
+
+5. **Usage**
 
     Run the main script to start the scraping process:
 
@@ -72,6 +73,7 @@ SkillTrendScraper is a Python web scraper designed to extract top job keywords a
     python main.py
     ```
     The scraper will extract top keywords and trends from the configured job portal.
+
 
 5. **Contributing**
 
