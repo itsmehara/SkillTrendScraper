@@ -9,6 +9,7 @@ from selenium.webdriver.chrome.service import Service
 import pandas as pd
 import time
 
+
 service = Service(executable_path=r"/opt/homebrew/bin/chromedriver")
 options = webdriver.ChromeOptions()
 #browser = webdriver.Chrome(executable_path=r"/opt/homebrew/bin/chromedriver")
@@ -21,7 +22,7 @@ wd_search_button_xpath = r'//*[@id="root"]/div[7]/div/div/div[6]'
 input_search = browser.find_element(By.XPATH, wd_search_box_xpath)
 input_search.send_keys("AWS Architect")
 
-# button_search = browser.find_element(By.XPATH, wd_search_button_xpath).click()
+button_search = browser.find_element(By.XPATH, wd_search_button_xpath).click()
 
 val = input("enter value 100:")
 # time.sleep(9000)
