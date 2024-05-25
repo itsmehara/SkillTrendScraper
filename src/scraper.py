@@ -29,3 +29,15 @@ val = input("enter value 100:")
 
 browser.quit()
 
+
+'''
+/html/body
+
+login-user = //*[@id="root"]/div[4]/div[2]/div/div/div[2]/div/form/div[2]/input
+login-pass = //*[@id="root"]/div[4]/div[2]/div/div/div[2]/div/form/div[3]/input
+
+
+other-sear = //*[@id="root"]/div[7]/div/div/div[1]/div/div/div/div[1]/div/input
+
+
+'''

@@ -81,25 +81,23 @@ if __name__ == "__main__":
     search_textbox_xpath = r'//*[@id="root"]/div[7]/div/div/div[1]/div/div/div/div[1]/div/input'  # Replace with the actual XPath
     input_value = "DevOps Architect"  # Replace with the desired input value
 
-    login_button_xpath = r'//*[@id="root"]/div[7]/div/div/div[6]'  # Replace with the actual XPath
-    loginuser_textbox_xpath = r'//*[@id="root"]/div[7]/div/div/div[1]/div/div/div/div[1]/div/input'  # Replace with the actual XPath
-    loginpass_textbox_xpath = r'//*[@id="root"]/div[7]/div/div/div[1]/div/div/div/div[1]/div/input'  # Replace with the actual XPath
-
     login_user_val = "abc@gmail.com"
-    login_pass_val = ""
+    login_pass_val = "passwod"
 
-    login_user_input_xpath = ""
-    login_pass_input_xpath = ""
+    login_user_input_xpath = r"//*[@id='root']/div[4]/div[2]/div/div/div[2]/div/form/div[2]/input"
+    login_pass_input_xpath = r"//*[@id='root']/div[4]/div[2]/div/div/div[2]/div/form/div[3]/input"
+    login_submit_xpath     = r"//*[@id='root']/div[4]/div[2]/div/div/div[2]/div/form/div[6]/button"
 
     scraper = WebScraper(driver_path)
     scraper.open_page(url)
+
+    # # ## Search specific skill jobs
     # scraper.fill_textbox(search_textbox_xpath, input_value)
     # scraper.click_button(search_button_xpath)
 
 
-    login_button_xpath = r"//*[@id='login_Layer']"
-    login_submit_xpath = r"//*[@id='root']/div[4]/div[2]/div/div/div[2]/div/form/div[6]/button"
-    scraper.click_button(login_button_xpath)
+    homepage_login_layer_button = r"//*[@id='login_Layer']"
+    scraper.click_button(homepage_login_layer_button)
 
     time.sleep(2000)
 
